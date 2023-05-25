@@ -1,0 +1,35 @@
+#content .large {
+	font-size: 1.5em;
+}
+
+#page_content {
+	width: 100% 
+	}
+
+#page_content table {
+border-collapse: separate;
+}
+
+.leftcol {
+background-color: #cccccc;
+text-align: right;
+}
+
+.rightcol {
+background-color: #e6e9ea;
+}
+
+#filter table {
+background-color: #cccccc;
+}
+
+#filter td {
+padding: 5px;
+
+}
+
+
+td { padding:15px; }
+#plain td {
+  padding: 0px; 
+}
