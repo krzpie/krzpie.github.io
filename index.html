@@ -1,258 +1,349 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>IST Austria Cryptography Group</title>
-  <link rel="stylesheet" href="tables.css" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cryptography Group at ISTA</title>
+  <meta name="description" content="The Cryptography Group at ISTA studies foundational and applied cryptography, including sustainable blockchains, secure group messaging, and leakage-resilient cryptography.">
+  <meta name="theme-color" content="#163a32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Raleway:wght@300;400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23163a32'/%3E%3Ccircle cx='16' cy='16' r='8.5' fill='none' stroke='%23d47b2f' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.8' fill='%23f2f6f1'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
-  <h1><a href="http://pub.ist.ac.at/crypto/">Cryptography Group at IST Austria</a></h1>
-  <table width="100%">
-    <colgroup>
-      <col class="leftcol">
-      <col class="rightcol">
-    </colgroup>
-    <tr>
-      <td valign="top"><b>Current Members</b></td>
-      <td>
-        <a href="http://pub.ist.ac.at/crypto/erc/ToCNET.html"><img align="right" width="200" src="LOGO-ERC-small.jpg" alt="LOGO-ERC-small"></a> <b>Krzysztof Pietrzak</b> (Professor) pietrzak@ist.ac.at<br>
-        <b>Benedikt Auerbach</b> (Postdoc)<br>
-        <b>Georgia (Zeta) Avarikioti</b> (Postdoc)<br>
-        <b>Suvradip Chakraborty</b> (Postdoc)<br>
-        <b><a href="http://pub.ist.ac.at/~mwalter/">Michael Walter</a></b> (Postdoc)<br>
-        <b>Karen Klein</b> (PhD. student)<br>
-        <b>Guillermo Perez</b> (PhD. student)<br>
-        <b>Michelle Yeo</b> (PhD. student)<br>
-        <b>Mirza Baig</b> (PhD. student)<br>
-        <b>Charlotte Hoffmann</b> (PhD. student)<br>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top"><b>Group picture (summer 2019)</b></td>
-      <td><img src="GP19.jpg" width="750" alt="GP19"><br>
-      Chethan Kamath, Michelle Yeo, Michael Walter, Guillermo Perez, Krzysztof Pietrzak, Miguel Cueto (ISTern), Ahmadreza Rahimi (visiting), Margarita Capretto (ISTern), Karen Klein</td>
-    </tr>
-    <tr>
-      <td valign="top"><b>Research Interests</b></td>
-      <td>
-        <p>The cryptography group at IST Austria works on theoretical and practical aspect of cryptography.</p>Several of our current topics <a href="https://www.pebbling-game.at/forschung">involve graph-pebbling as described here</a>, <a href="https://www.pebbling-game.at">here you can try to consruct a hard to pebble graph.</a><br>
-        <br>
-        Some of our current research interest are
-        <ul>
-          <li>
-            <p><strong>Sustainable Cryptocurrencies.&nbsp;</strong>Bitcoin is the first successful digital currency. Its popularity comes from the fact that it is decentralised, so no central authority controls it. To achieve security despite decentralisation a huge amount of computing power is constantly wasted towards generating Proofs of Work, this is economically and ecologically problematic. We work on more "sustainable" cryptocurrencies.</p>
-            <p>Towards this goal we introduced the concept of "Proofs of Space" <a href="https://eprint.iacr.org/2013/796">[DFKP'15]</a>,<a href="https://eprint.iacr.org/2016/100">[ACK+'16]</a>,<a href="https://eprint.iacr.org/2018/194.pdf">[Pie'19]</a>&nbsp;as a replacement for Proofs of Work. An academic proposal using proofs of space is the Spacemint cryptocurrency <a href="https://eprint.iacr.org/2015/528">[PPK+'15]</a>. We are involved with the <a href="https://chia.net">Chia network</a> which will <a href="https://www.chia.net/greenpaper/">combine</a> proofs of space with <a href="https://vdfresearch.org">verifiable delay functions (VDF)</a>.</p>
-          </li>
-          <li>
-            <p><strong>Memory-hard Functions</strong> (MHF) are functions which require a large amount of memory to be evaluated. Despite having found many applications, until recently there were no meaningful security proofs MHFs at all. MHFs come in two flavours, data-dependent and data-independent. In <a href="https://eprint.iacr.org/2016/989">[ACPRT'17]</a> (Best Paper Award at Eurocrypt'17) we show that <a href="https://en.wikipedia.org/wiki/Scrypt">Scrypt</a> is an "optimal" data depentend MHF. In <a href="https://eprint.iacr.org/2016/875">[ABP'16]</a> we show how "depth robust" graphs give rise to data independent MHFs with optimal parameters. In a series of papers <a href="https://eprint.iacr.org/2016/115">[AB'16a]</a>,<a href="https://eprint.iacr.org/2016/759">[AB'16b]</a>,<a href="https://eprint.iacr.org/2016/783">[AGK+'16b]</a> we break most of the proposals of data-independent MHFs.</p>
-          </li>
-          <li>
-            <p><strong>Crypto for light-weight devices.</strong>&nbsp;We work towards provably secure cryptographic schemes for light-weight devices such as RFID tags, which are too constrained to run existing cryptographic schemes. In&nbsp;<a href="https://www.iacr.org/archive/eurocrypt2011/66320007/66320007.pdf">[KPC+'11]</a>&nbsp;(Best Paper Award at Eurocrypt'11) and&nbsp;<a href="https://www.iacr.org/workshops/fse2012/FSEpreproceedings/PDF/19.pdf">[HKL+'12]</a>&nbsp;we construct extremely efficient and provably secure authentiaction schemes based on the the (ring) LPN problems. In&nbsp;<a href="https://eprint.iacr.org/2012/513">[JKPT'12]</a>,<a href="https://eprint.iacr.org/2014/889">[BKLP'15]</a> we give commitments with effecient zero-knowledge proofs from the same assumption.</p>
-          </li>
-          <li>
-            <strong>Symmetric Cryptography.</strong>&nbsp;We develop new tools to construct and analyze symmetric (aka secret key) primitives. One focus lies is determening the&nbsp;<em>exact</em> security of popular schemes. We gave such tight bounds for HMAC <a href="https://eprint.iacr.org/2014/578">[GPR'14]</a> (and variants &nbsp;<a href="https://eprint.iacr.org/2015/881">[GPT'15]</a>), PMAC <a href="https://eprint.iacr.org/2017/069">[GPR'17]</a> and CBC <a href="https://eprint.iacr.org/2015/053">[GPT'15]</a>.&nbsp;
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top"><b>Publications</b></td>
-      <td>
-        <b>Most recent:</b>
-        <p class="publ"><span class="author">Georg Fuchsbauer, Chethan Kamath, Karen Klein, Krzysztof Pietrzak</span><br>
-        <span class="title">Adaptively Secure Proxy Re-encryption</span><br>
-        <span class="info">Public Key Cryptography (PKC) 2019</span><br>
-        <span class="files">[<a href="https://eprint.iacr.org/2018/426">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Hamza Abusalah, Chethan Kamath Karen Klein, Krzysztof Pietrzak, Michael Walter</span><br>
-        <span class="title">Reversible Proofs of Sequential Work</span><br>
-        <span class="info">Eurocrypt 2019</span><br>
-        <span class="files">[<a href="https://eprint.iacr.org/2019/???">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Arka Rai Choudhuri, Pavel Hubacek, Chethan Kamath, Krzysztof Pietrzak, Alon Rosen, Guy N. Rothblum</span><br>
-        <span class="title">Finding a Nash Equilibrium is No Easier than Breaking Fiat-Shamir</span><br>
-        <span class="info">STOC 2019</span><br>
-        <span class="files">[<a href="https://eprint.iacr.org/2019/???">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Michael Walter</span><br>
-        <span class="title">Sampling the Integers with Low Relative Error</span><br>
-        <span class="info">AFRICACRYPT 2019</span><br>
-        <span class="files">[<a href="https://eprint.iacr.org/2019/068">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Krzysztof Pietrzak</span><br>
-        <span class="title">Simple Verifiable Delay Functions</span><br>
-        <span class="info">Innovations in Theoretical Computer Science (ITCS) 2019</span><br>
-        <span class="files">[<a href="https://eprint.iacr.org/2018/627">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Krzysztof Pietrzak</span><br>
-        <span class="title">Proofs of Catalytic Space</span><br>
-        <span class="info">Innovations in Theoretical Computer Science (ITCS) 2019</span><br>
-        <span class="files">[<a href="https://eprint.iacr.org/2018/194">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Stefan Dziembowski, Krzysztof Pietrzak and Daniel Wichs</span><br>
-        <span class="title">Non-Malleable Codes</span><br>
-        <span class="info">Journal of the ACM, Volume 65 Issue 4, August 2018</span><br>
-        [<a href="https://dl.acm.org/citation.cfm?doid=3178432">article</a>][<a href="https://eprint.iacr.org/2009/608">full version</a>]</p>
-        <p class="publ"><span class="author">Joel Alwen, Peter Gazi, Chethan Kamath, Karen Klein, Georg Osang, Krzysztof Pietrzak, Leonid Reyzin, Michal Rolinek and Michal Rybar</span><br>
-        <span class="title">On the Memory-Hardness of Data-Independent Password-Hashing Functions</span><br>
-        <span class="info">AsiaCCS 2018</span><br>
-        <span class="files">[<a href="https://eprint.iacr.org/2016/783">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Bram Cohen and Krzysztof Pietrzak</span><br>
-        <span class="title">Simple Proofs of Sequential Work (Best Paper Award)</span><br>
-        <span class="info">Eurocrypt 2018</span><br>
-        <span class="files">[<a href="https://eprint.iacr.org/2018/183">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Joel Alwen, Jeremiah Blocki and Krzysztof Pietrzak</span><br>
-        <span class="title">Sustained Space Complexity</span><br>
-        <span class="info">Eurocrypt 2018</span><br>
-        <span class="files">[<a href="https://eprint.iacr.org/2018/147">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Daniele Micciancio and Michael Walter</span><br>
-        <span class="title">On the Bit Security of Cryptographic Primitives</span><br>
-        <span class="info">Eurocrypt 2018</span><br>
-        <span class="files">[<a href="https://eprint.iacr.org/2018/077">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Maciej Obremski and Maciej Skorski</span><br>
-        <span class="title">Renyi Entropy Estimation Revisited</span><br>
-        <span class="info">Approx-Random 2017</span><br>
-        <span class="files">[<a href="http://drops.dagstuhl.de/opus/volltexte/2017/7569/">proceedings</a>] [<a href="https://eprint.iacr.org/2017/588">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Maciej Skorski</span><br>
-        <span class="title">On the Complexity of Breaking Pseudoentropy</span><br>
-        <span class="info">TAMC 2017</span><br>
-        <span class="files">[<a href="https://link.springer.com/chapter/10.1007%2F978-3-319-55911-7_43">proceedings</a>] [<a href="https://eprint.iacr.org/2016/1186">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Joel Alwen, Jeremiah Blocki and Ben Harsha</span><br>
-        <span class="title">Practical Graphs for Optimal Side-Channel Resistant Memory-Hard Functions</span><br>
-        <span class="info">ACM CCS 2017</span><br>
-        <span class="files">[<a href="https://dl.acm.org/citation.cfm?doid=3133956.3134031">proceedings</a>] [<a href="https://eprint.iacr.org/2017/443">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Hamza Abusalah, Joel Alwen, Bram Cohen, Danylo Khilko, Krzysztof Pietrzak, Leonid Reyzin</span><br>
-        <span class="title">Beyond Hellman's Time-Memory Trade-Offs with Applications to Proofs of Space</span><br>
-        <span class="info">Asiacrypt 2017</span><br>
-        <span class="files"><!--       [<a href="http://drops.dagstuhl.de/opus/volltexte/2017/7473/">proceedings</a>] -->
-         [<a href="https://eprint.iacr.org/2017/893">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Krzysztof Pietrzak and Maciej Skorski</span><br>
-        <span class="title">Non-Uniform Attacks Against Pseudoentropy</span><br>
-        <span class="info">ICALP 2017</span><br>
-        <span class="files">[<a href="http://drops.dagstuhl.de/opus/volltexte/2017/7473/">proceedings</a>] [<a href="https://arxiv.org/abs/1704.08678">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Joshua Brody, Stefan Dziembowski, Sebastian Faust and Krzysztof Pietrzak</span><br>
-        <span class="title">Position-Based Cryptography and Multiparty Communication Complexity</span><br>
-        <span class="info">TCC 2017</span><br>
-        [<a href="https://link.springer.com/chapter/10.1007%2F978-3-319-70500-2_3">proceedings</a>] [<a href="https://eprint.iacr.org/2016/536">full version</a>]</p>
-        <p class="publ"><span class="author">Eike Kiltz, Krzysztof Pietrzak, Daniele Venturi, David Cash and Abhishek Jain</span><br>
-        <span class="title">Efficient Authentication from Hard Learning Problems</span><br>
-        <span class="info">Journal of Cryptography 2017</span><br>
-        [<a href="https://link.springer.com/article/10.1007/s00145-016-9247-3">article</a>]</p>
-        <p class="publ"><span class="author">Zahra Jafargholi, Chethan Kamath, Karen Klein, Ilan Komargodski, Krzysztof Pietrzak and Daniel Wichs</span><br>
-        <span class="title">Be Adaptive, Avoid Overcommitting</span><br>
-        <span class="info">Crypto 2017</span><br>
-        [<a href="https://link.springer.com/chapter/10.1007/978-3-319-63688-7_5">proceedings</a>] [<a href="https://eprint.iacr.org/2017/515">full version</a>]</p>
-        <p class="publ"><span class="author">Joel Alwen and Jeremiah Blocki and Krzysztof Pietrzak</span><br>
-        <span class="title">Depth-Robust Graphs and Their Cumulative Memory Complexity</span><br>
-        <span class="info">Eurocrypt 2017</span><br>
-        <span class="files">[<a href="https://link.springer.com/chapter/10.1007%2F978-3-319-56617-7_1">proceedings</a>] [<a href="https://eprint.iacr.org/2016/875">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Joel Alwen and Binyi Chen and Krzysztof Pietrzak and Leonid Reyzin and Stefano Tessaro</span><br>
-        <span class="title">Scrypt is Maximally Memory-Hard (<a href="http://ist.ac.at/nc/en/news-media/news/news-detail/browse/3/article/best-paper-award-for-ist-austria-cryptographers-and-their-collaborators">Best Paper Award</a>)</span><br>
-        <span class="info">Eurocrypt 2017</span><br>
-        <span class="files">[<a href="https://link.springer.com/chapter/10.1007%2F978-3-319-56617-7_2">proceedings</a>] [<a href="https://eprint.iacr.org/2016/989">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Peter Gazi, Krzysztof Pietrzak and Michal Rybar</span><br>
-        <span class="title">The Exact Security of PMAC</span><br>
-        <span class="info">ToSC 2017, Volume 1, and FSE 2017</span><br>
-        [<a href="https://tosc.iacr.org/index.php/ToSC/article/view/569">article</a>] [<a href="https://eprint.iacr.org/2017/069">full version</a>]</p>
-        <p class="publ"><span class="author">Joel Alwen, Jeremiah Blocki</span><br>
-        <span class="title">Towards Practical Attacks on Argon2i and Balloon Hashing</span><br>
-        <span class="info">Euro S&amp;P 2017</span><br>
-        <span class="files">[<a href="http://ieeexplore.ieee.org/document/7961977/">proceedings</a>] [<a href="http://eprint.iacr.org/2016/759">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Joel Alwen, Susanna F. de Rezende, Jakob Nordström and Marc Vinyals</span><br>
-        <span class="title">Cumulative Space in Black-White Pebbling and Resolution</span><br>
-        <span class="info">ITCS 2017</span><br></p>
-        <p class="publ"><span class="author">Maciej Skorski</span><br>
-        <span class="title">Key Derivation for Squared-Friendly Applications: Lower Bounds</span><br>
-        <span class="info">STACS 2017</span><br>
-        <span class="files">[<a href="http://drops.dagstuhl.de/opus/volltexte/2017/6976/">proceedings</a>] [<a href="http://eprint.iacr.org/2016/157">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Krzysztof Pietrzak, Maciej Skorski</span><br>
-        <span class="title">Pseudoentropy: Lower-Bounds for Chain Rules and Transformations</span><br>
-        <span class="info">TCC (B1) 2016</span><br>
-        <span class="files">[<a href="https://link.springer.com/chapter/10.1007%2F978-3-662-53641-4_8">proceedings</a>] [<a href="http://eprint.iacr.org/2016/159">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Maciej Skorski</span><br>
-        <span class="title">Simulating Auxiliary Inputs, Revisited</span><br>
-        <span class="info">TCC (B1) 2016</span><br>
-        <span class="files">[<a href="https://link.springer.com/chapter/10.1007%2F978-3-662-53641-4_7">proceedings</a>] [<a href="http://eprint.iacr.org/2016/808">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Stephan Krenn, Krzysztof Pietrzak, Akshay Wadia, Daniel Wichs</span><br>
-        <span class="title">A counterexample to the chain rule for conditional HILL entropy</span><br>
-        <span class="info">Computational Complexity 2016</span><br>
-        <span class="files">[<a href="https://link.springer.com/article/10.1007%2Fs00037-015-0120-9">article</a>] [<a href="http://eprint.iacr.org/2014/678">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Georg Fuchsbauer, Felix Heuer, Eike Kiltz, Krzysztof Pietrzak</span><br>
-        <span class="title">Standard Security Does Imply Security Against Selective Opening for Markov Distributions</span><br>
-        <span class="info">TCC (A1) 2016</span><br>
-        <span class="files">[<a href="https://link.springer.com/chapter/10.1007%2F978-3-662-49096-9_12">proceedings</a>] [<a href="http://eprint.iacr.org/2015/853">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Georg Fuchsbauer, Christian Hanser, Chethan Kamath and Daniel Slamanig</span><br>
-        <span class="title">Practical Round-Optimal Blind Signatures in the Standard Model from Weaker Assumptions</span><br>
-        <span class="info">SCN 2016</span><br>
-        <span class="files">[<a href="https://link.springer.com/chapter/10.1007%2F978-3-319-44618-9_21">proceedings</a>] [<a href="http://eprint.iacr.org/2016/662">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Chethan Kamath and &nbsp;Sanjit Chatterjee</span><br>
-        <span class="title">A Closer Look at Multiple-Forking: Leveraging (In)dependence for a Tighter Bound</span><br>
-        <span class="info">Algorithmica 2016, Volume 74</span><br>
-        <span class="files">[<a href="http://eprint.iacr.org/2013/651">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Joel Alwen, Binyi Chen, Chethan Kamath, Vladimir Kolmogorov, Krzysztof Pietrzak and Stefano Tessaro</span><br>
-        <span class="title">On the Complexity of Scrypt and Proofs of Space in the Parallel Random Oracle Model</span><br>
-        <span class="info">Eurocrypt 2016</span><br>
-        <span class="files">[<a href="http://eprint.iacr.org/2016/100">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Joel Alwen, Jeremiah Blocki</span><br>
-        <span class="title">Efficiently Computing Data-Independent Memory-Hard Functions</span><br>
-        <span class="info">CRYPTO 2016</span><br>
-        <span class="files">[<a href="http://eprint.iacr.org/2016/115">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Peter Gazi, Stefano Tessaro</span><br>
-        <span class="title">Provably Robust Sponge-Based PRNGs and KDFs</span><br>
-        <span class="info">Advances in Cryptology -- Eurocrypt 2016, Lecture Notes in Computer Science, Springer-Verlag, 2016</span><br>
-        <span class="files">[<a href="https://link.springer.com/chapter/10.1007%2F978-3-662-49890-3_4">proceedings</a>] [<a href="http://eprint.iacr.org/2016/169">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Hamza Abusalah, Georg Fuchsbauer, Krzysztof Pietrzak</span><br>
-        <span class="title">Constrained PRFs for Unbounded Inputs</span><br>
-        <span class="info">CT-RSA 2016</span><br>
-        <span class="files">[<a href="https://link.springer.com/chapter/10.1007/978-3-319-39555-5_24">proceedings</a>] [<a href="http://eprint.iacr.org/2014/840">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Hamza Abusalah, Georg Fuchsbauer</span><br>
-        <span class="title">Constrained PRFs for Unbounded Inputs with Short Keys</span><br>
-        <span class="info">ACNS 2016</span><br>
-        <span class="files">[<a href="https://link.springer.com/chapter/10.1007%2F978-3-319-29485-8_24">proceedings</a>] [<a href="http://eprint.iacr.org/2016/279">full version</a>]</span><br></p>
-        <p class="publ"><span class="author">Hamza Abusalah, Georg Fuchsbauer, Krzysztof Pietrzak</span><br>
-        <span class="title">Offline Witness Encryption</span><br>
-        <span class="info">ACNS 2016</span><br>
-        <span class="files">[<a href="https://link.springer.com/chapter/10.1007%2F978-3-319-39555-5_16">proceedings</a>] [<a href="http://eprint.iacr.org/2015/838">full version</a>]</span><br></p><b><a href="publications.html">some older publications</a></b><br>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top"><b>Former Members</b></td>
-      <td><b>Chethan Kamath (PhD student, <a href="https://pub.ist.ac.at/~ckamath/Resources/Documents/PThesis.pdf">graduated 2020)<br></a> <a href="https://informatics.tuwien.ac.at/people/hamza-abusalah">Hamza Abusalah</a></b> (PhD student, graduated 2018)<br>
-      <b>Joel Alwen</b> (Postdoc) - now at Wickr<br>
-      <b>Maciej Skorski</b> (Postdoc)<br>
-      <b><a href="https://iohk.io/team/peter-gazi/">Peter Gazi</a></b> (Postdoc) - now at IOHK<br>
-      <b><a href="https://informatics.tuwien.ac.at/people/georg-fuchsbauer">Georg Fuchsbauer</a></b> (Postdoc) - now at ENS Paris<br>
-      <b>Michal Rybar</b> (PhD. student, graduated 2017)<br>
-      <b><a href="http://researcher.ibm.com/researcher/view.php?person=zurich-SKR">Stephan Krenn</a></b> (Postdoc) - now at Austrian Institute of Technology<br>
-      <br></td>
-    </tr>
-    <tr>
-      <td valign="top"><b>Visting students and interns</b></td>
-      <td>
-        <b>Ahmadreza Rahimi</b>, University of Virginia (visiting PhD student, 2019)<br>
-        <b>Margarite Capretto</b>, University of Rosaria/Argentina, (<a href="https://ist.ac.at/research/internships/#c5272">ISTern</a>, Summer 2019)<br>
-        <b>Miguel Cueto</b>, University of Oviedo/Spain, (<a href="https://ist.ac.at/research/internships/#c5272">ISTern</a>, Summer 2019)<br>
-        <b>Arka Rai Choudhuri</b> , John Hopkins, (graduate summer student, 2018)<br>
-        <b>Samarth Tiwari</b> , New York University (<a href="https://ist.ac.at/research/internships/#c5272">ISTern</a>, Summer 2018)<br>
-        <b>Sasha Lapiga</b> , Taras Shevchenko National University of Kyiv (<a href="https://ist.ac.at/research/internships/#c5272">ISTern</a>, Summer 2018)<br>
-        <b>Anastasia Kucherenko</b> , Taras Shevchenko National University of Kyiv (<a href="https://ist.ac.at/research/internships/#c5272">ISTern</a>, Summer 2017)<br>
-        <b>Mukesh Pareek</b> , IIT Bombay (<a href="https://ist.ac.at/research/internships/#c5272">ISTern</a>, Summer 2017)<br>
-        <b>Hana Dlouha</b> , CTU in Prague (<a href="https://ist.ac.at/research/internships/#c5272">ISTern</a>, Summer 2017)<br>
-        <b>Teresa Steiner</b>, TU Wien (student intern, 2016)<br>
-        <b>Danylo Khilko</b>, Taras Shevchenko National University of Kyiv (<a href="https://ist.ac.at/research/internships/#c5272">ISTern</a>, 2016)<br>
-        <b>Zahra Jafargholi</b>, UCLA (graduate summer student, 2014)<br>
-        <b>Maciej Skorski</b>, University of Warsaw (graduate summer student, 2012/13/14/15)<br>
-        <b>Sophie Stevens</b>, Bristol (<a href="https://ist.ac.at/research/internships/#c5272">ISTernship</a>, 2014)<br>
-        <b>Kristian Tokmakov</b>, Oxford (<a href="https://ist.ac.at/research/internships/#c5272">ISTernship</a>, 2014)<br>
-        <b>Alexander Golovnev</b>, NYU (graduate summer student, 2014)<br>
-        <b>Momchil Konstantinov</b>, Oxford (<a href="https://ist.ac.at/research/internships/#c5272">ISTernship</a>, 2013)<br>
-        <b>Vanishree Rao</b>, UCLA (graduate summer student, 2013)<br>
-        <b>Akshay Wadia</b>, UCLA (graduate summer student, 2012)<br>
-        <b>Aris Tentes</b>, NYU (graduate summer student, 2011)<br>
-        <br>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top"><b>Applicants</b></td>
-      <td>
-        <!--     If you are interested in doing a PhD in this group (or at IST Austria in general), please visit the <a href="http://www.ist.ac.at/graduate-school">Graduate School homepage</a>.  If you are interested in a postdoc position, please contact Krzysztof Pietrzak directly.  -->
-        If you are interested in doing a PhD in this group (or at IST Austria in general), please visit the <a href="https://phd.pages.ist.ac.at/">Graduate School homepage</a>. If you are interested in a postdoc position, please contact Krzysztof Pietrzak directly.<br>
-      </td>
-    </tr>
-  </table>
-  <hr>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Cryptography Group at ISTA home">
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span>Cryptography at ISTA</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#research">Research</a>
+      <a href="#pi">PI</a>
+      <a href="#people">People</a>
+      <a href="#publications">Publications</a>
+      <a href="#grants">Grants</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="kicker">Institute of Science and Technology Austria</p>
+        <h1 id="hero-title">Cryptography Group at ISTA.</h1>
+        <p class="hero-intro">We study theoretical and applied cryptography: the mathematical ideas that make information, communication, and decentralized systems secure.</p>
+        <div class="hero-links">
+          <a class="button button-primary" href="#research">Explore our research</a>
+          <a class="text-link" href="#people">Meet the group <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <aside class="updates" aria-labelledby="updates-title">
+        <div class="updates-heading">
+          <p class="section-tag">Recent</p>
+          <h2 id="updates-title">From the group</h2>
+        </div>
+        <article class="update-item">
+          <time datetime="2026">2026</time>
+          <div>
+            <p class="update-type">Accepted · ASIACRYPT</p>
+            <h3><a href="https://eprint.iacr.org/2026/737">Blind verifiable delay functions</a></h3>
+          </div>
+        </article>
+        <article class="update-item">
+          <time datetime="2026">2026</time>
+          <div>
+            <p class="update-type">Accepted · ASIACRYPT</p>
+            <h3><a href="https://eprint.iacr.org/2026/738">SPoCK: Sequential proofs of complete knowledge</a></h3>
+          </div>
+        </article>
+        <article class="update-item">
+          <time datetime="2026">2026</time>
+          <div>
+            <p class="update-type">Accepted · CRYPTO</p>
+            <h3><a href="https://eprint.iacr.org/2025/1900">Beholder signatures</a></h3>
+          </div>
+        </article>
+        <article class="update-item">
+          <time datetime="2026">2026</time>
+          <div>
+            <p class="update-type">Accepted · ASIACRYPT</p>
+            <h3>On the security of KEM combiners beyond the strongest component</h3>
+          </div>
+        </article>
+      </aside>
+      <div class="proof-motif" aria-hidden="true">
+        <span class="orbit orbit-a"></span>
+        <span class="orbit orbit-b"></span>
+        <span class="proof-dot dot-a"></span>
+        <span class="proof-dot dot-b"></span>
+        <span class="proof-dot dot-c"></span>
+      </div>
+    </section>
+
+    <section class="section pi-section" id="pi" aria-labelledby="pi-title">
+      <div class="pi-grid">
+        <figure class="pi-portrait">
+          <img src="images/krzysztof-pietrzak.jpg" width="1200" height="1600" alt="Krzysztof Pietrzak outdoors in the mountains">
+        </figure>
+        <div class="pi-copy">
+          <p class="section-tag">Principal investigator</p>
+          <h2 id="pi-title">Krzysztof Pietrzak</h2>
+          <p class="pi-role">Professor of Computer Science</p>
+          <p>Krzysztof Pietrzak works on foundational and practical questions in cryptography. His research includes proofs of space and time, memory-hard functions, leakage-resilient cryptography, and secure decentralized systems. He joined ISTA in 2011.</p>
+          <div class="pi-links">
+            <a class="button button-primary" href="mailto:Krzysztof.Pietrzak@ist.ac.at">Email</a>
+            <a class="text-link" href="https://www.ista.ac.at/en/research/pietrzak-group/">ISTA profile <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://research-explorer.ista.ac.at/person/3E04A7AA-F248-11E8-B48F-1D18A9856A87">Publications <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section research-section" id="research" aria-labelledby="research-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-tag">Research</p>
+          <h2 id="research-title">Security, from first principles.</h2>
+        </div>
+        <p class="section-lead">We connect rigorous security theory with systems that face practical constraints and adversaries.</p>
+      </div>
+      <div class="research-grid">
+        <article class="research-card">
+          <span class="research-number">01</span>
+          <h3>Sustainable blockchains</h3>
+          <p>Proofs of space, verifiable delay functions, and consensus protocols that avoid the resource cost of proof of work.</p>
+        </article>
+        <article class="research-card">
+          <span class="research-number">02</span>
+          <h3>Secure group messaging</h3>
+          <p>Protocols that scale private, authenticated communication to large and changing groups.</p>
+        </article>
+        <article class="research-card">
+          <span class="research-number">03</span>
+          <h3>Leakage-resilient cryptography</h3>
+          <p>Schemes designed to remain secure when physical implementations leak information or are tampered with.</p>
+        </article>
+        <article class="research-card">
+          <span class="research-number">04</span>
+          <h3>Cryptographic complexity</h3>
+          <p>Memory-hard functions, proof systems, and the assumptions and reductions underlying provable security.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section people-preview" id="people" aria-labelledby="people-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-tag">People</p>
+          <h2 id="people-title">Current group</h2>
+        </div>
+      </div>
+      <div class="people-grid">
+        <article class="person-card">
+          <p class="person-role">PhD student</p>
+          <h3>Christoph Günther</h3>
+        </article>
+        <article class="person-card">
+          <p class="person-role">Postdoc</p>
+          <h3>Guilherme Teixeira Rito</h3>
+        </article>
+        <article class="person-card">
+          <p class="person-role">Postdoc</p>
+          <h3>Akin Ünal</h3>
+        </article>
+      </div>
+
+      <div class="alumni-block">
+        <div class="subsection-heading">
+          <div>
+            <p class="section-tag">Alumni</p>
+            <h3>Where the group has gone next</h3>
+          </div>
+          <p>Current affiliations are included where they could be verified from public institutional or personal pages.</p>
+        </div>
+
+        <div class="alumni-columns">
+          <section aria-labelledby="phd-alumni-title">
+            <h4 id="phd-alumni-title">PhD graduates</h4>
+            <ul class="alumni-list">
+              <li><span><strong>Miguel Cueto Noval</strong><small>PhD 2026</small></span><span>Postdoc, CISPA Helmholtz Center for Information Security</span></li>
+              <li><span><strong>Mirza Ahad Baig</strong><small>PhD 2026</small></span><span>Postdoctoral Researcher, University of Bern</span></li>
+              <li><span><strong>Charlotte Hoffmann</strong><small>PhD 2025</small></span><span>Cryptographer at Zama</span></li>
+              <li><span><strong>Guillermo Pascual Perez</strong><small>PhD 2024</small></span><span>VISTA Science</span></li>
+              <li><span><strong>Michelle Yeo</strong><small>PhD 2023</small></span><span>Assistant Professor, NTU Singapore</span></li>
+              <li><span><strong>Karen Azari <span class="former-name">(formerly Klein)</span></strong><small>PhD 2021</small></span><span>Assistant Professor, University of Vienna</span></li>
+              <li><span><strong>Chethan Kamath</strong><small>PhD 2019</small></span><span>Assistant Professor, IIT Bombay</span></li>
+              <li><span><strong>Hamza Abusalah</strong><small>PhD 2017</small></span><span>Assistant Professor, Aalborg University</span></li>
+              <li><span><strong>Michal Rybár</strong><small>PhD 2017</small></span><span>Director of Digital Transformation, Slovak Ministry of Education</span></li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="postdoc-alumni-title">
+            <h4 id="postdoc-alumni-title">Postdocs</h4>
+            <ul class="alumni-list">
+              <li><span><strong>Charlotte Hoffmann</strong><small>2025–2026</small></span><span>Cryptographer at Zama</span></li>
+              <li><span><strong>Ray Neiheiser</strong><small>2022–2026</small></span><span>Research Fellow, Nanyang Technological University</span></li>
+              <li><span><strong>Anshu Yadav</strong><small>2023–2026</small></span><span>Assistant Professor, IIT Kanpur</span></li>
+              <li><span><strong>Benedikt Auerbach</strong><small>2019–2024</small></span><span>Senior Cryptography Researcher, PQShield</span></li>
+              <li><span><strong>Georgia “Zeta” Avarikioti</strong><small>2021–2022</small></span><span>Assistant Professor, TU Wien; Chief Scientist, Common Prefix</span></li>
+              <li><span><strong>Suvradip Chakraborty</strong><small>2020–2021</small></span><span>Research Scientist, Advanced Cryptography, Visa Research</span></li>
+              <li><span><strong>Michael Walter</strong><small>2018–2021</small></span><span>Cryptographer at Zama</span></li>
+              <li><span><strong>Joël Alwen</strong><small>2014–2018</small></span><span>Chief Cryptographer, AWS Wickr</span></li>
+              <li><span><strong>Peter Gaži</strong><small>2013–2017</small></span><span>Researcher, Input Output Research</span></li>
+              <li><span><strong>Maciej Skórski</strong><small>2016–2017</small></span><span>Researcher, University of Warsaw</span></li>
+              <li><span><strong>Georg Fuchsbauer</strong><small>2013–2016</small></span><span>Associate Professor, TU Wien</span></li>
+              <li><span><strong>Stephan Krenn</strong><small>2012–2013</small></span><span>Thematic Coordinator, AIT</span></li>
+            </ul>
+          </section>
+        </div>
+
+        <details class="interns-disclosure">
+          <summary>Interns and visiting researchers <span>30 people · 2011–2026</span></summary>
+          <div class="intern-grid">
+            <p><strong>2025–2026</strong> Linus Klockner · Mahdi Ali Hamad</p>
+            <p><strong>2024</strong> Emiel Wiedijk · Mladen Kovacevic</p>
+            <p><strong>2023</strong> Sumedh Ghude · Pengxiang Wang · Matthias Franz Pleschinger · Konrad Klier</p>
+            <p><strong>2021</strong> Mahsa Bastankhah</p>
+            <p><strong>2019</strong> Ahmadreza Rahimi · Margarita Capretto · Miguel Cueto</p>
+            <p><strong>2018</strong> Arka Rai Choudhuri · Samarth Tiwari · Oleksandra “Sasha” Lapiha</p>
+            <p><strong>2017</strong> Anastasiia Kucherenko · Mukesh Pareek · Hana Dlouha</p>
+            <p><strong>2016</strong> Theresa Steiner · Danylo Khilko</p>
+            <p><strong>2014</strong> Zahra Jafargholi · Sophie Stevens · Kristian Tokmakov · Aleksandr Golovnev</p>
+            <p><strong>2012–2015</strong> Maciej Skórski</p>
+            <p><strong>2013</strong> Momchil Konstantinov · Vanishree Rao</p>
+            <p><strong>2012</strong> Akshay Wadia</p>
+            <p><strong>2011</strong> Joachim Schipper · Aris Tentes</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="publications-section" id="publications" aria-labelledby="publications-title">
+      <div class="section publications-inner">
+        <div class="section-heading light-heading">
+          <div>
+            <p class="section-tag">Publications</p>
+            <h2 id="publications-title">Recent work</h2>
+          </div>
+          <p class="section-lead">The complete, maintained record lives in ISTA Research Explorer. Preprints are linked here when available.</p>
+        </div>
+
+        <div class="publication-list">
+          <article class="publication-item">
+            <div class="publication-meta"><time datetime="2026">2026</time><span>ASIACRYPT</span></div>
+            <div><h3><a href="https://eprint.iacr.org/2026/737">Blind verifiable delay functions</a></h3><p>Charlotte Hoffmann, Krzysztof Pietrzak</p></div>
+          </article>
+          <article class="publication-item">
+            <div class="publication-meta"><time datetime="2026">2026</time><span>ASIACRYPT</span></div>
+            <div><h3><a href="https://eprint.iacr.org/2026/738">SPoCK: Sequential proofs of complete knowledge</a></h3><p>Antonio Giulio D’Antona, Charlotte Hoffmann, Krzysztof Pietrzak</p></div>
+          </article>
+          <article class="publication-item">
+            <div class="publication-meta"><time datetime="2026">2026</time><span>CRYPTO</span></div>
+            <div><h3>Beholder signatures</h3><p>Stefan Dziembowski, Sebastian Faust, Paweł Kędzior, Małgorzata Mielniczuk, Satya Kumar Mohanty, Krzysztof Pietrzak</p></div>
+          </article>
+          <article class="publication-item">
+            <div class="publication-meta"><time datetime="2026">2026</time><span>ASIACRYPT</span></div>
+            <div><h3>On the security of KEM combiners beyond the strongest component</h3><p>Yu-Hsuan Huang, Jonas Janneck, Eike Kiltz, Krzysztof Pietrzak, Emiel Wiedijk</p></div>
+          </article>
+          <article class="publication-item">
+            <div class="publication-meta"><time datetime="2026">2026</time><span>FC</span></div>
+            <div><h3><a href="https://doi.org/10.1007/978-3-032-07035-7_8">On the (in)security of proofs-of-space based longest-chain blockchains</a></h3><p>Mirza Ahad Baig, Krzysztof Pietrzak</p></div>
+          </article>
+          <article class="publication-item">
+            <div class="publication-meta"><time datetime="2025">2025</time><span>ITC</span></div>
+            <div><h3>Time-space tradeoffs of truncation with preprocessing</h3><p>Krzysztof Pietrzak, Pengxiang Wang</p></div>
+          </article>
+          <article class="publication-item">
+            <div class="publication-meta"><time datetime="2025">2025</time><span>Preprint</span></div>
+            <div><h3><a href="https://eprint.iacr.org/2025/1410">Nakamoto consensus from multiple resources</a></h3><p>Krzysztof Pietrzak and collaborators</p></div>
+          </article>
+          <article class="publication-item">
+            <div class="publication-meta"><time datetime="2025">2025</time><span>ESORICS</span></div>
+            <div><h3>Route discovery in private payment channel networks</h3><p>Zeta Avarikioti, Mahsa Bastankhah, Mohammad Ali Maddah-Ali, Krzysztof Pietrzak, Jakub Svoboda, Michelle Yeo</p></div>
+          </article>
+        </div>
+
+        <div class="publication-actions">
+          <a class="button button-copper" href="https://research-explorer.ista.ac.at/record?cql=department%3DKrPi">All group publications at ISTA</a>
+          <a class="text-link light-link" href="https://research-explorer.ista.ac.at/person/3E04A7AA-F248-11E8-B48F-1D18A9856A87">Krzysztof Pietrzak’s record <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section grants-section" id="grants" aria-labelledby="grants-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-tag">Funding</p>
+          <h2 id="grants-title">Current and past grants</h2>
+        </div>
+        <p class="section-lead">Long-term support for foundational research in cryptography, security, and privacy.</p>
+      </div>
+
+      <div class="grant-timeline">
+        <article class="grant-item grant-current">
+          <div class="grant-years">2026—2029</div>
+          <div><p class="grant-status">Current · WWTF Joint Project</p><h3>Foundations and Applications of Resource-Restricted Cryptography</h3><p>FARCry · With Karen Azari (University of Vienna) and Dominique Schröder (TU Wien). Krzysztof Pietrzak is co-PI.</p></div>
+        </article>
+        <article class="grant-item grant-current">
+          <div class="grant-years">2023—2026</div>
+          <div><p class="grant-status">Current · FWF Special Research Programme</p><h3><a href="https://www.spycode.at/">SPyCoDe</a></h3><p>Semantic and Cryptographic Foundations of Security and Privacy by Compositional Design.</p></div>
+        </article>
+        <article class="grant-item">
+          <div class="grant-years">2016—2021</div>
+          <div><p class="grant-status">ERC Consolidator Grant</p><h3><a href="https://cordis.europa.eu/project/id/682815">Teaching Old Crypto New Tricks</a></h3><p>TOCNeT · Grant agreement 682815</p></div>
+        </article>
+        <article class="grant-item">
+          <div class="grant-years">2010—2015</div>
+          <div><p class="grant-status">ERC Starting Grant</p><h3>Provable Security for Physical Cryptography</h3><p>PSPC · Foundations for security in physically constrained implementations.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section photo-section" id="photographs" aria-labelledby="photos-title">
+      <details class="photo-archive">
+        <summary>
+          <span><span class="section-tag">Archive</span><strong id="photos-title">Group photographs</strong></span>
+          <span class="archive-meta">2016—2023 · open archive</span>
+        </summary>
+        <div class="photo-grid">
+          <figure><a href="group_pictures/group_pic23_2MB.jpg"><img src="group_pictures/group_pic23_2MB.jpg" width="3884" height="2034" loading="lazy" alt="Pietrzak Group photograph outdoors in 2023"></a><figcaption>2023</figcaption></figure>
+          <figure><a href="group_pictures/group2022.jpg"><img src="group_pictures/group2022.jpg" width="1860" height="994" loading="lazy" alt="Pietrzak Group photograph outdoors in 2022"></a><figcaption>2022</figcaption></figure>
+          <figure><a href="group_pictures/grouppic_2018.jpg"><img src="group_pictures/grouppic_2018.jpg" width="1400" height="600" loading="lazy" alt="Pietrzak Group photograph in front of a whiteboard in 2018"></a><figcaption>2018</figcaption></figure>
+          <figure><a href="group_pictures/grouppic_2017.jpg"><img src="group_pictures/grouppic_2017.jpg" width="2500" height="1500" loading="lazy" alt="Pietrzak Group photograph in 2017"></a><figcaption>2017</figcaption></figure>
+          <figure><a href="group_pictures/grouppic_2016.jpg"><img src="group_pictures/grouppic_2016.jpg" width="2634" height="1752" loading="lazy" alt="Pietrzak Group photograph in 2016"></a><figcaption>2016</figcaption></figure>
+        </div>
+        <p class="archive-note">More photographs can be added here by year without changing the rest of the page.</p>
+      </details>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section contact-inner">
+        <div>
+          <p class="section-tag">Contact</p>
+          <h2 id="contact-title">Work with us.</h2>
+        </div>
+        <div class="contact-copy">
+          <p>We welcome enquiries from strong PhD candidates, postdoctoral researchers, and interns with backgrounds in cryptography, theoretical computer science, or mathematics.</p>
+          <div class="contact-links">
+            <a class="button button-primary" href="mailto:Krzysztof.Pietrzak@ist.ac.at">Contact the group</a>
+            <a class="text-link" href="https://phd.pages.ist.ac.at/">ISTA PhD admissions <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Cryptography Group · Institute of Science and Technology Austria</p>
+    <div><a href="https://www.ista.ac.at/en/research/pietrzak-group/">ISTA profile</a><a href="#top">Back to top ↑</a></div>
+  </footer>
+
+  <script src="site.js" defer></script>
 </body>
 </html>
